@@ -7,6 +7,14 @@ read -p "enter number3: " c
 result=$(( ($a + $b) * $c ))
 
 echo "result is $result"
+echo "************"
+
+
+read -p "enter number1: " a
+read -p "enter number2: " b
+read -p "enter number3: " c
+result=$(( ($a * $b) + $c))
+echo "result is $result"
 
 
 

@@ -41,12 +41,13 @@ echo ${dict[@]}
 
 echo "**********"
 
-for key in "${dict[@]}"
+for key in "${!dict[@]}"
 do
-	if [[ ${dict[$key]} =~ $result ]]
-	then
-echo "key : ${dict[@]}"
-	fi
+	arr[i]="${dict[$key]}"
+	((i++))
 	
 done
+echo "stored in array :${arr[@]}"
+echo "***********"
+
 
